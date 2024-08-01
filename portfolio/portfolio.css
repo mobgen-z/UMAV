@@ -1,0 +1,242 @@
+@font-face { 
+  font-family: YOUR FONT NAME; 
+  src: url(http://sitename.com/wp-content/themes/themename/fonts/font-name.ttf); 
+  font-weight: normal; 
+  }
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: transparent;
+    color: ;
+    width: 100vw;
+    padding: 20px;
+    position: fixed;
+  }
+
+
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  img{
+    height: 200px;
+    width: fit-content;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 5%;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #home{
+    background-image: url("wallpapersden.com_monkey-luffy_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+  }
+
+
+  #home .notes{
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    width: 30rem;
+    padding-left: 8rem;
+    padding-top: 18rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .notes h1{
+    text-align: center;
+    flex-shrink: 2;
+  }
+
+  .notes p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+#techstack{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 9rem;
+}
+
+
+  hr{
+    background-color: gray;
+    border: 0;
+    height: 1rem;
+    margin: 0;
+  }
+  
+  section {
+    padding: 20px;
+  }
+
+  #about{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    height: 99vh;
+    padding-left: 8rem;
+    justify-content: center;
+    align-items: center;
+    font-family: komoda;
+    font-size: 22px;
+  }
+
+  #about div{
+    width: 50rem;
+    text-align: center;
+  }
+
+  #projects{
+    padding-left: 8rem;
+    background-color: black;
+    color: #fff;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects .project{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#contact{
+  color: #e8e8e8;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact p{
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff40;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+
